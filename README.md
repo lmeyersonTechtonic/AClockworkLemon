@@ -9,8 +9,8 @@ in the vim editor that shows up enter:
 MAILTO=""
 PATH=<your path>
 SHELL=<your shell path>
-0 8 * * 1-5 ./in-for-day.py
-30 16 * * 1-5 ./out-for-day.py
+0 8 * * 1-5 python3 in-for-day.py
+30 16 * * 1-5 python3 out-for-day.py
 ```
 Regarding Vim and crontab<br/>
 to save, `esc` to get out of insert mode.<br/> Then `:w` followed by `:wq`.
@@ -23,3 +23,9 @@ on line #4 enter your id number as timeClockId
 The cron tasks will skip if your machine is off or hibernating.
 With the bash scripts in your home folder, you can manage manual clockin or clockout with
 `./clockIn` or `./clockOut`
+
+<hr/>
+Test your setup in the following fashion:<br/>
+add this line to your crontab<br/>
+* * * * * python3 trash.py<br/>
+this will run a test version of Cypress's clockin path every minute. If it's working, you should be good to go. Remove the test script from your crontab and re-save.
