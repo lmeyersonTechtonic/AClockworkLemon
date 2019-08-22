@@ -12,8 +12,8 @@ SHELL=<your shell path>
 0 8 * * 1-5 ./in-for-day.py
 30 16 * * 1-5 ./out-for-day.py
 ```
-Regarding Vim and crontab
-to save `esc` to get out of insert mode. Then `:w` followed by `:wq`.
+Regarding Vim and crontab<br/>
+to save, `esc` to get out of insert mode.<br/> Then `:w` followed by `:wq`.
 This is redundant but I've had better luck with crontab saving with this redundant approach.
 You should get a sytem warning pop up if saved successfully. 
 
