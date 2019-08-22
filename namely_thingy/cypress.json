@@ -1,0 +1,6 @@
+{
+    "chromeWebSecurity": false,
+    "env": {
+        "timeClockId": 0 // < enter your time clock id here>
+    }
+}
