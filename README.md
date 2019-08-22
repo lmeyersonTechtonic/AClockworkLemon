@@ -15,6 +15,10 @@ SHELL=<your shell path>
 ```
 This is calling the in-for-day script at 8:AM Mon-Fri and the out-for-day script at 5:PM Mon - Fri
 
+To obtain your PATH, in your terminal type `echo $PATH`<br/>
+To obtain your SHELL path type `echo $SHELL`
+
+
 Regarding Vim and crontab<br/>
 to save, `esc` to get out of insert mode.<br/> Then `:w` followed by `:wq`.
 This is redundant but I've had better luck with crontab saving with this redundant approach.
@@ -38,4 +42,5 @@ Test your setup in the following two steps:<br/>
 * * * * * python3 trash.py
 ```
 <br/>
-this will run every minute and trigger the UI. You'll be prompted to confirm or cancel a run of "testClockin" every minute. Selecting "Confirm", you won't see the Cypress terminal output directly as it's running in the background but you will see Cypress popup and then remove itself from your dock. If it's working, you should be good to go. Remove the test script from your crontab and re-save.
+this will run every minute and trigger the UI. You'll be prompted to confirm or cancel a run of "testClockin" every minute. Selecting "Confirm", you won't see the Cypress terminal output directly as it's running in the background but you will see Cypress popup and then remove itself from your dock. If it's working, you should be good to go. Remove the test script from your crontab and re-save.<br/>
+From your terminal you can type `crontab -l` to view all cron jobs.
